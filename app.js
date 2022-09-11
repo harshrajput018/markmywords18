@@ -12,7 +12,7 @@ const search = require('./routes/search');
 
 const jwt = require('jsonwebtoken')
 
-app.use(express.static(path.join(__dirname+"/public")))
+
 
 
 
@@ -21,6 +21,8 @@ mongoose.connect('mongodb://localhost:27017/test').then(()=>{console.log('db has
 const app=express();
 
 app.use(express.json())
+
+app.use(express.static(path.join(__dirname+"/public")))
 
 
 
