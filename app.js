@@ -1,9 +1,11 @@
 const express= require('express');
 const cors=require('cors')
+const path=require('path')
 
 const mongoose=require('mongoose');
 
 const addnotes = require('./routes/addnotes')
+
 const shownotes = require('./routes/shownotes')
 const update = require('./routes/update')
 const deletenote = require('./routes/deletenote');
