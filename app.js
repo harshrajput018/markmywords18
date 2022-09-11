@@ -37,6 +37,6 @@ app.get('/',(req,res)=>{
     res.send('<h1>My name is Harsh</h1>')
 })
 
-app.listen(8000,()=>{
+app.listen(process.env.PORT || 8000,()=>{
     console.log('server is listening')
 })
