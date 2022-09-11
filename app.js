@@ -18,7 +18,7 @@ const jwt = require('jsonwebtoken')
 
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/test').then(()=>{console.log('db has been connected')});
+mongoose.connect(to_string(process.env.MONGODB_URI)).then(()=>{console.log('db has been connected')});
 
 const app=express();
 
