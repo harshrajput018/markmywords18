@@ -14,7 +14,7 @@ const search = require('./routes/search');
 
 const jwt = require('jsonwebtoken')
 
-const favicon=require('serve-favicon')
+
 
 
 
@@ -26,7 +26,7 @@ const app=express();
 app.use(express.json())
 
 app.use(express.static(path.join(__dirname+"/public")))
-app.use(favicon(path.join(__dirname+"/favicon.ico")));
+
 
 
 
